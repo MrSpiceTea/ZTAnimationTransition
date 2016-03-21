@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0J-Uv-I53">
+                    <rect key="frame" x="200" y="210" width="131" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="88" id="FQI-MA-Tg8"/>
+                        <constraint firstAttribute="height" constant="100" id="lCq-yS-Jyf"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="myface.jpg"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="FQI-MA-Tg8"/>
+                            <exclude reference="lCq-yS-Jyf"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="FQI-MA-Tg8"/>
+                            <include reference="lCq-yS-Jyf"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="btnAction:" destination="-1" eventType="touchUpInside" id="abL-T5-Kfu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="D0J-Uv-I53" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YNT-tf-aaG"/>
+                <constraint firstItem="D0J-Uv-I53" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="a3e-vM-zJe"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="YNT-tf-aaG"/>
+                    <exclude reference="a3e-vM-zJe"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="YNT-tf-aaG"/>
+                    <include reference="a3e-vM-zJe"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="myface.jpg" width="180" height="180"/>
+    </resources>
+</document>
